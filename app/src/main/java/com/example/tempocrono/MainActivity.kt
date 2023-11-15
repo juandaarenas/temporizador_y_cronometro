@@ -88,11 +88,13 @@ class MainActivity : AppCompatActivity() {
             btnPlayStop.setOnClickListener {
                 if (iniciar==false){
                     time.start()
+                    imgState.setImageDrawable(getDrawable(R.drawable.cronorun))
                     iniciar = true
                     btnPlayStop.text = "Detener"
                 }else{
                     time.cancel()
                     btnPlayStop.text = "Iniciar"
+                    imgState.setImageDrawable(getDrawable(R.drawable.cronostop))
                     iniciar = false
 
                 }
@@ -103,6 +105,7 @@ class MainActivity : AppCompatActivity() {
                 count=1
                 minuts=0
                 hours=0
+                imgState.setImageDrawable(getDrawable(R.drawable.cronostar))
                 btnPlayStop.text = "Iniciar"
                 iniciar = false
             }

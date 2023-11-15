@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/background"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -22,6 +23,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Iniciar"
+        style="@style/btn_style"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -33,6 +36,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Reiniciar"
+        style="@style/btn_style"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -45,11 +50,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Temporizador"
+        style="@style/btn_style"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.062" />
+
+    <ImageView
+        android:id="@+id/imgState"
+        android:layout_width="211dp"
+        android:layout_height="194dp"
+        app:layout_constraintBottom_toTopOf="@+id/textCronometro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.777"
+        app:srcCompat="@drawable/cronostar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

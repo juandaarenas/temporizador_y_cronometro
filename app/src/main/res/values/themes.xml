@@ -6,4 +6,23 @@
     </style>
 
     <style name="Theme.TempoCrono" parent="Base.Theme.TempoCrono" />
+
+
+    <style name="btn_style" parent="Widget.Material3.Button">
+        <item name="android:background">
+            @drawable/btn_style
+        </item>
+        <item name="backgroundTint">
+            @color/color_btn
+        </item>
+    </style>
+
+    <style name="input_style" parent="Widget.Material3.Button">
+        <item name="android:background">
+            @drawable/input_style
+        </item>
+        <item name="backgroundTint">
+            @color/color_input
+        </item>
+    </style>
 </resources>

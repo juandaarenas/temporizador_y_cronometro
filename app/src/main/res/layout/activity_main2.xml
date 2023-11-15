@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/background"
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
@@ -16,24 +17,29 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.639" />
+        app:layout_constraintVertical_bias="0.736" />
 
     <Button
         android:id="@+id/btnPlayStop"
+        style="@style/btn_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Iniciar"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textCronometro" />
+        app:layout_constraintTop_toBottomOf="@+id/textCronometro"
+        app:layout_constraintVertical_bias="0.242" />
 
     <Button
         android:id="@+id/btnReStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Reiniciar"
+        style="@style/btn_style"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -49,7 +55,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.366">
+        app:layout_constraintVertical_bias="0.186">
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -57,6 +63,8 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textHoras"
+                style="@style/input_style"
+                android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Horas" />
@@ -69,6 +77,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textMinutos"
                 android:layout_width="match_parent"
+                style="@style/input_style"
+                android:textColor="@color/black"
                 android:layout_height="wrap_content"
                 android:hint="Minutos" />
 
@@ -81,6 +91,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textSegundos"
                 android:layout_width="match_parent"
+                style="@style/input_style"
+                android:textColor="@color/black"
                 android:layout_height="wrap_content"
                 android:hint="Segundos" />
 
@@ -92,10 +104,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cronometro"
+        style="@style/btn_style"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.101"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.051" />
+
+    <ImageView
+        android:id="@+id/imgState"
+        android:layout_width="143dp"
+        android:layout_height="123dp"
+        app:layout_constraintBottom_toTopOf="@+id/textCronometro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.881"
+        app:srcCompat="@drawable/tempstar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

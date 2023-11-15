@@ -55,9 +55,14 @@ class MainActivity2 : AppCompatActivity() {
                     }
                     timer.start()
                     iniciar = true
+                    textSegundos.isEnabled=false
+                    textMinutos.isEnabled=false
+                    textHoras.isEnabled=false
+                    imgState.setImageDrawable(getDrawable(R.drawable.temprun))
                     btnPlayStop.text = "Detener"
                 } else {
                     timer.cancel()
+                    imgState.setImageDrawable(getDrawable(R.drawable.tempstop))
                     btnPlayStop.text = "Iniciar"
                     iniciar = false
 
@@ -69,6 +74,10 @@ class MainActivity2 : AppCompatActivity() {
                 count = 0
                 minuts = 0
                 hours = 0
+                textSegundos.isEnabled=true
+                textMinutos.isEnabled=true
+                textHoras.isEnabled=true
+                imgState.setImageDrawable(getDrawable(R.drawable.tempstar))
                 textHoras.setText("")
                 textMinutos.setText("")
                 textSegundos.setText("")
