@@ -64,6 +64,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textHoras"
                 style="@style/input_style"
+                android:inputType="number"
                 android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -78,6 +79,7 @@
                 android:id="@+id/textMinutos"
                 android:layout_width="match_parent"
                 style="@style/input_style"
+                android:inputType="number"
                 android:textColor="@color/black"
                 android:layout_height="wrap_content"
                 android:hint="Minutos" />
@@ -92,6 +94,7 @@
                 android:id="@+id/textSegundos"
                 android:layout_width="match_parent"
                 style="@style/input_style"
+                android:inputType="number"
                 android:textColor="@color/black"
                 android:layout_height="wrap_content"
                 android:hint="Segundos" />

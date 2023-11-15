@@ -62,6 +62,9 @@ class MainActivity2 : AppCompatActivity() {
                     btnPlayStop.text = "Detener"
                 } else {
                     timer.cancel()
+                    textSegundos.isEnabled=true
+                    textMinutos.isEnabled=true
+                    textHoras.isEnabled=true
                     imgState.setImageDrawable(getDrawable(R.drawable.tempstop))
                     btnPlayStop.text = "Iniciar"
                     iniciar = false
